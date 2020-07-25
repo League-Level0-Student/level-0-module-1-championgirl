@@ -1,4 +1,5 @@
-
+PImage pepperoni;
+PImage olive;
 void setup() {
     size(500,500);
     
@@ -11,10 +12,20 @@ ellipse(240,200,250 ,250 );
 fill(#F4F514);
 ellipse(240,200,200 ,200 );
 
-PImage pepperoni = loadImage("pepperoni.gif");
-image(pepperoni, 150, 150);
+
+pepperoni = loadImage("pepperoni.gif");
+olive = loadImage("olive.jpg");
+pepperoni.resize(30, 30);
+olive.resize(30,30);
 
 }
 void draw() {
     
+    
+if (mousePressed && (mouseButton == RIGHT)) {image(olive, 200, 140);}
+if (mousePressed && (mouseButton == LEFT)) {image(pepperoni, 160, 140);
+    }
+
 }
+
+ 

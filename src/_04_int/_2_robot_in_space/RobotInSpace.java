@@ -39,16 +39,16 @@ if(keyPressed==38) {
 
 if(keyPressed==40) {
 	rob.setAngle(0);
-	rob.microMove(5);
+	rob.microMove(-5);
 }
 		// 5. If the left arrow is pressed, make the Robot go left.
 if(keyPressed==37) {
-	rob.setAngle(0);
+	rob.setAngle(-90);
 	rob.microMove(5);
 }
 		// 6. If right is pressed, move the Robot right.
 if(keyPressed==39) {
-	rob.setAngle(0);
+	rob.setAngle(90);
 	rob.microMove(5);
 }
 		// 7. Run your program and move the Robot to R2-D2 for a surprise!
